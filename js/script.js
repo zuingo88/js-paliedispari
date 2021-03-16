@@ -49,7 +49,7 @@ function es1sol2() {
 
 function es2() {
     function handRnd(min, max) {
-        var value = Math.floor(Math.random() * max + min);
+        var value = Math.floor(Math.random() * (max - min + 1)) + min; //Il max è incluso e il min è incluso
         return value;
     };
 
